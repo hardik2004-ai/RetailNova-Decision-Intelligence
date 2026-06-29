@@ -1,24 +1,27 @@
 # Decision Log
 
-## D001
+---
 
-Date:
-2026-06-28
+## DEC-001
 
-Decision
+**Date:** 2026-06-28
 
-Project will focus on Indian Omnichannel Retail.
+### Decision
 
-Reason
+Project will focus on the Indian Omnichannel Retail industry.
 
-Highest business complexity while remaining understandable.
+### Reason
 
-Alternatives
+The retail industry offers a broad range of interconnected business processes—including sales, inventory, marketing, finance, logistics, customer analytics, and supply chain management—making it an ideal domain for building an end-to-end Decision Intelligence Platform.
 
-Banking
-Healthcare
-Food Delivery
+### Alternatives Considered
 
-Status
+- Banking
+- Healthcare
+- Food Delivery
+
+### Status
 
 Accepted
+
+---
