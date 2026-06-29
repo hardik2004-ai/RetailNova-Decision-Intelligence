@@ -4,6 +4,8 @@
 
 ## High-Level Architecture
 
+## Core Components
+
 ## Data Sources
 
 ## Data Pipeline
@@ -17,6 +19,8 @@
 ## Application Layer
 
 ## Dashboard Layer
+
+## Technology Stack
 
 ## Security
 
