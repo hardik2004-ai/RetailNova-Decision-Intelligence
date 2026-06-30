@@ -30,7 +30,25 @@ This document covers:
 * Data Lineage Principles
 
 ---
+---
 
+# Database Modules
+
+The RetailNova operational database is organized into the following business modules:
+
+| Module | Tables |
+|---------|--------|
+| Customer Management | Customer, Address, Membership |
+| Product Management | Category, Brand, Product |
+| Supplier Management | Supplier |
+| Location Management | Location |
+| Inventory Management | Inventory |
+| Sales Management | Order, OrderItem |
+| Payment Management | Payment |
+| Returns Management | Return |
+| Procurement Management | PurchaseOrder, PurchaseOrderItem |
+
+Total Operational Tables: **15**
 # Business Glossary
 
 ## Revenue
@@ -193,103 +211,127 @@ Inventory that has not been sold for more than 180 days.
 
 ---
 
-## Marketplace Seller
+## Sales Channel
 
 **Definition**
 
-A third-party business selling products through the RetailNova platform.
+The platform through which a customer places an order.
 
----
+**Supported Values**
+
+- STORE
+- WEBSITE
+- MOBILE_APP
+- MARKETPLACE
 
 ## NovaPremium Member
 
 **Definition**
 
-A customer enrolled in RetailNova's premium membership program.
+A customer subscribed to RetailNova Premium.
 
----
+**Billing Options**
 
+- Monthly (₹149)
+- Yearly (₹1499)
+
+RetailNova currently offers only one membership plan.
 # Technical Data Dictionary
 
-## Example: DimCustomer
+The following tables constitute the RetailNova Operational Database (OLTP).
 
-| Field            | Description                | Data Type | Source         | Nullable | Example     |
-| ---------------- | -------------------------- | --------- | -------------- | -------- | ----------- |
-| CustomerKey      | Warehouse surrogate key    | INT       | Data Warehouse | No       | 10542       |
-| CustomerID       | Business identifier        | VARCHAR   | CRM            | No       | CUST10001   |
-| CustomerName     | Customer full name         | VARCHAR   | CRM            | Yes      | Amit Sharma |
-| Gender           | Customer gender            | VARCHAR   | CRM            | Yes      | Male        |
-| AgeGroup         | Customer age category      | VARCHAR   | Derived        | Yes      | 25-34       |
-| City             | Customer city              | VARCHAR   | CRM            | Yes      | Mumbai      |
-| State            | Customer state             | VARCHAR   | CRM            | Yes      | Maharashtra |
-| Region           | Sales region               | VARCHAR   | Derived        | Yes      | West        |
-| MembershipTier   | Loyalty membership         | VARCHAR   | CRM            | Yes      | Gold        |
-| RegistrationDate | Customer registration date | DATE      | CRM            | No       | 2024-05-12  |
-
----
-
-## Example: FactSales
-
-| Field          | Description                | Data Type     |
-| -------------- | -------------------------- | ------------- |
-| SalesKey       | Fact surrogate key         | BIGINT        |
-| OrderID        | Business order identifier  | VARCHAR       |
-| CustomerKey    | Foreign key to DimCustomer | INT           |
-| ProductKey     | Foreign key to DimProduct  | INT           |
-| StoreKey       | Foreign key to DimStore    | INT           |
-| DateKey        | Foreign key to DimDate     | INT           |
-| Quantity       | Units sold                 | INT           |
-| UnitPrice      | Selling price per unit     | DECIMAL(12,2) |
-| GrossRevenue   | Revenue before discounts   | DECIMAL(12,2) |
-| DiscountAmount | Applied discount           | DECIMAL(12,2) |
-| NetRevenue     | Revenue after discounts    | DECIMAL(12,2) |
-| COGS           | Cost of goods sold         | DECIMAL(12,2) |
-| GrossProfit    | Net Revenue minus COGS     | DECIMAL(12,2) |
+| Table | Description | Primary Key | Major Foreign Keys |
+|---------|-------------|-------------|--------------------|
+| Customer | Stores customer master information | customer_id | — |
+| Address | Stores customer addresses | address_id | customer_id |
+| Membership | Stores Premium membership subscriptions | membership_id | customer_id |
+| Category | Stores product categories | category_id | — |
+| Brand | Stores product brands | brand_id | — |
+| Product | Stores product master information | product_id | category_id, brand_id, supplier_id |
+| Supplier | Stores supplier information | supplier_id | — |
+| Location | Stores stores and warehouses | location_id | — |
+| Inventory | Stores current inventory by product and location | inventory_id | product_id, location_id |
+| Order | Stores customer orders | order_id | customer_id, location_id |
+| OrderItem | Stores products purchased in an order | order_item_id | order_id, product_id |
+| Payment | Stores payment information | payment_id | order_id |
+| Return | Stores returned products | return_id | order_item_id |
+| PurchaseOrder | Stores supplier purchase orders | purchase_order_id | supplier_id |
+| PurchaseOrderItem | Stores purchased products | purchase_order_item_id | purchase_order_id, product_id |
 
 ---
 
 # KPI Dictionary
 
-| KPI                     | Formula                                       | Business Owner | Refresh Frequency |
-| ----------------------- | --------------------------------------------- | -------------- | ----------------- |
-| Revenue                 | SUM(NetRevenue)                               | Finance        | Hourly            |
-| Gross Profit            | Net Revenue − COGS                            | Finance        | Hourly            |
-| Profit Margin           | Gross Profit / Net Revenue                    | Finance        | Hourly            |
-| Average Order Value     | Revenue / Orders                              | Sales          | Hourly            |
-| Inventory Turnover      | COGS / Average Inventory                      | Supply Chain   | Daily             |
-| Return Rate             | Returns / Sales                               | Operations     | Daily             |
-| Customer Lifetime Value | Lifetime Revenue                              | Analytics      | Weekly            |
-| Marketing ROI           | (Revenue − Marketing Spend) / Marketing Spend | Marketing      | Daily             |
-| Active Customers        | Customers with purchase in last 365 days      | Analytics      | Daily             |
-| Churn Rate              | Churned Customers / Active Customers          | Analytics      | Weekly            |
+| KPI | Formula | Business Owner | Refresh Frequency |
+|------|---------|----------------|-------------------|
+| Revenue | SUM(total_amount) | Finance | Hourly |
+| Net Revenue | Revenue − Refund Amount | Finance | Hourly |
+| Gross Profit | Net Revenue − COGS | Finance | Hourly |
+| Profit Margin | Gross Profit / Net Revenue | Finance | Hourly |
+| Average Order Value | Revenue / Number of Orders | Sales | Hourly |
+| Inventory Value | SUM(quantity_on_hand × unit_cost) | Supply Chain | Daily |
+| Inventory Turnover | COGS / Average Inventory Value | Supply Chain | Daily |
+| Return Rate | Returned Items / Sold Items | Operations | Daily |
+| Customer Lifetime Value | Lifetime Revenue | Analytics | Weekly |
+| Active Customers | Customers with purchases in last 365 days | Analytics | Daily |
+| Churn Rate | Churned Customers / Active Customers | Analytics | Weekly |
+| Procurement Spend | SUM(total_amount) | Procurement | Daily |
+| Membership Revenue | SUM(membership_fee) | Marketing | Daily |
 
 ---
 
 # Naming Standards
 
-## Fact Tables
+## Operational Tables (OLTP)
+
+```
+Customer
+Address
+Membership
+
+Category
+Brand
+Product
+
+Supplier
+
+Location
+
+Inventory
+
+Order
+OrderItem
+
+Payment
+
+Return
+
+PurchaseOrder
+PurchaseOrderItem
+```
+
+---
+
+## Data Warehouse Tables (OLAP)
+
+### Fact Tables
 
 ```
 FactSales
 FactInventory
 FactReturns
-FactMarketing
 FactProcurement
 ```
 
----
-
-## Dimension Tables
+### Dimension Tables
 
 ```
 DimCustomer
 DimProduct
-DimStore
-DimWarehouse
+DimCategory
+DimBrand
 DimSupplier
-DimPromotion
-DimSeller
-DimRegion
+DimLocation
 DimDate
 ```
 
@@ -300,7 +342,8 @@ DimDate
 ```
 vw_sales_summary
 vw_inventory_status
-vw_customer_segmentation
+vw_customer_summary
+vw_procurement_summary
 ```
 
 ---
@@ -309,101 +352,195 @@ vw_customer_segmentation
 
 ```
 sp_load_sales
-sp_refresh_inventory
+sp_load_inventory
+sp_refresh_dimensions
 sp_generate_kpis
 ```
 
 ---
 
-## Primary Keys
+## Primary Keys (OLTP)
 
 ```
-CustomerKey
-ProductKey
-StoreKey
-SupplierKey
-WarehouseKey
-DateKey
-SalesKey
+customer_id
+address_id
+membership_id
+category_id
+brand_id
+product_id
+supplier_id
+location_id
+inventory_id
+order_id
+order_item_id
+payment_id
+return_id
+purchase_order_id
+purchase_order_item_id
 ```
 
 ---
 
-## Foreign Keys
+## Foreign Keys (OLTP)
 
 ```
-CustomerKey
-ProductKey
-StoreKey
-DateKey
-WarehouseKey
-SupplierKey
-PromotionKey
+customer_id
+category_id
+brand_id
+supplier_id
+location_id
+product_id
+order_id
+order_item_id
+purchase_order_id
 ```
+
+---
+
+# Business Enumerations
+
+## Location Type
+
+- STORE
+- WAREHOUSE
+
+---
+
+## Sales Channel
+
+- STORE
+- WEBSITE
+- MOBILE_APP
+- MARKETPLACE
+
+---
+
+## Order Status
+
+- PLACED
+- SHIPPED
+- DELIVERED
+- CANCELLED
+
+---
+
+## Payment Status
+
+- SUCCESS
+- FAILED
+- PENDING
+- REFUNDED
+
+---
+
+## Purchase Order Status
+
+- PENDING
+- RECEIVED
+- CANCELLED
+
+---
+
+## Return Status
+
+- REQUESTED
+- APPROVED
+- REJECTED
+- REFUNDED
+
+---
+
+## Membership Billing Cycle
+
+- MONTHLY
+- YEARLY
 
 ---
 
 # Data Standards
 
-| Data Element    | Standard      |
-| --------------- | ------------- |
-| IDs             | INT / BIGINT  |
+| Data Element | Standard |
+|--------------|----------|
+| Primary Keys | UUID |
+| Foreign Keys | UUID |
 | Monetary Values | DECIMAL(12,2) |
-| Quantity        | INT           |
-| Percentage      | DECIMAL(5,2)  |
-| Date            | DATE          |
-| Timestamp       | TIMESTAMP     |
-| Text            | VARCHAR       |
-| Boolean         | BOOLEAN       |
+| Quantity | INTEGER |
+| Percentage | DECIMAL(5,2) |
+| Date | DATE |
+| Timestamp | TIMESTAMP |
+| Status Values | VARCHAR |
+| Text | VARCHAR |
+| Boolean | BOOLEAN |
 
 ---
 
 # Null Handling Rules
 
-| Field Type      | Rule                                    |
-| --------------- | --------------------------------------- |
-| Primary Keys    | Never NULL                              |
-| Foreign Keys    | Never NULL unless optional relationship |
-| Customer Name   | Never NULL                              |
-| Product Name    | Never NULL                              |
-| Quantity        | Default 0                               |
-| Discount        | Default 0                               |
-| Shipping Charge | Default 0                               |
-| Gender          | NULL Allowed                            |
-| Middle Name     | NULL Allowed                            |
-| Customer Phone  | NULL Allowed                            |
-| Customer Email  | NULL Allowed                            |
+| Field | Rule |
+|--------|------|
+| Primary Keys | Never NULL |
+| Foreign Keys | Never NULL unless relationship is optional |
+| Customer Name | Never NULL |
+| Product Name | Never NULL |
+| Category | Never NULL |
+| Brand | Never NULL |
+| Quantity | Default 0 |
+| Discount | Default 0 |
+| Refund Amount | Default 0 |
+| Phone Number | NULL Allowed |
+| Email | NULL Allowed |
+| Membership End Date | NULL until membership created |
+| Received Date | NULL until purchase order received |
+
+---
+
+# Data Ownership
+
+| Table | Business Owner |
+|---------|---------------|
+| Customer | Customer Success |
+| Address | Customer Success |
+| Membership | Marketing |
+| Category | Merchandising |
+| Brand | Merchandising |
+| Product | Product Management |
+| Supplier | Procurement |
+| Location | Operations |
+| Inventory | Supply Chain |
+| Order | Sales |
+| OrderItem | Sales |
+| Payment | Finance |
+| Return | Customer Support |
+| PurchaseOrder | Procurement |
+| PurchaseOrderItem | Procurement |
 
 ---
 
 # Data Quality Principles
 
-RetailNova follows the following data quality principles:
+RetailNova follows these enterprise data quality principles:
 
-* Accuracy
-* Completeness
-* Consistency
-* Validity
-* Timeliness
-* Uniqueness
-* Referential Integrity
+- Accuracy
+- Completeness
+- Consistency
+- Validity
+- Timeliness
+- Uniqueness
+- Referential Integrity
 
-All analytical datasets should satisfy these principles before being loaded into the Enterprise Data Warehouse.
+All operational and analytical datasets must satisfy these principles before being used for reporting, Machine Learning, or AI-driven decision making.
 
 ---
 
 # Data Lineage
 
-Every KPI and analytical metric should be traceable to its original operational source.
+Every analytical metric must be traceable back to the operational database.
 
 ```
-Operational Systems
+RetailNova OLTP Database
         │
         ▼
-OLTP Database
-        │
-        ▼
-ETL / ELT Pipeline
+ETL Pipeline
         │
         ▼
 Enterprise Data Warehouse
@@ -425,21 +562,35 @@ AI Decision Engine
 
 # Semantic Layer (Future Enhancement)
 
-RetailNova will progressively introduce a business semantic layer that standardizes metric definitions across all analytical tools.
+RetailNova will introduce a centralized semantic layer to ensure consistent business definitions across SQL, Power BI, Machine Learning, and AI.
 
-Examples include:
+Standardized business metrics include:
 
-* Revenue
-* Net Revenue
-* Gross Profit
-* Average Order Value
-* Customer Lifetime Value
-* Inventory Turnover
-* Return Rate
-* Marketing ROI
+- Revenue
+- Net Revenue
+- Gross Profit
+- Profit Margin
+- Average Order Value
+- Customer Lifetime Value
+- Inventory Turnover
+- Inventory Value
+- Return Rate
+- Procurement Spend
+- Membership Revenue
 
-This semantic layer will ensure that SQL queries, Power BI reports, Machine Learning models, and the AI Decision Engine all consume identical business definitions.
+Every analytical tool will consume these standardized definitions from a single source of truth.
 
 ---
 
+# Metadata Summary
 
+| Metric | Value |
+|---------|------:|
+| Business Modules | 9 |
+| Operational Tables | 15 |
+| Primary Keys | 15 |
+| Foreign Key Relationships | 16 |
+| Database Type | PostgreSQL (OLTP) |
+| Normalization | Third Normal Form (3NF) |
+| Analytics Platform | PostgreSQL + Power BI + Python |
+| Supported Analytics | SQL, BI, Machine Learning, AI |
