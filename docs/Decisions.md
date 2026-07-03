@@ -667,3 +667,158 @@ Every table must have clear operational and analytical value. Additional entitie
 ## Status
 
 Approved
+
+---
+
+# DEC-027
+
+## Date
+
+Day 5
+
+## Decision
+
+Separate foreign key definitions from table creation scripts.
+
+## Reason
+
+Creating foreign keys after all tables have been created simplifies deployment, avoids dependency issues during schema creation, and improves maintainability by keeping table definitions focused on entity structure.
+
+## Alternatives Considered
+
+* Define foreign keys inside each CREATE TABLE statement
+* Generate foreign keys dynamically after deployment
+
+## Status
+
+Approved
+
+---
+
+# DEC-028
+
+## Date
+
+Day 5
+
+## Decision
+
+Implement a dedicated performance indexing layer for the OLTP database.
+
+## Reason
+
+Indexes should be created independently of table definitions to improve maintainability and deployment flexibility. Performance indexes are limited to foreign keys and frequently searched, filtered, joined, or reported columns to balance query performance with write efficiency.
+
+## Alternatives Considered
+
+* No additional indexes
+* Create indexes on every column
+* Embed indexes within table scripts
+
+## Status
+
+Approved
+
+---
+
+# DEC-029
+
+## Date
+
+Day 5
+
+## Decision
+
+Centralize audit timestamp management using a reusable PostgreSQL trigger function.
+
+## Reason
+
+Maintaining audit logic within a single reusable trigger function eliminates duplicate SQL, improves consistency across all tables, and simplifies future maintenance.
+
+## Alternatives Considered
+
+* Application-level timestamp updates
+* Separate trigger function for every table
+* Manual timestamp updates
+
+## Status
+
+Approved
+
+---
+
+# DEC-030
+
+## Date
+
+Day 5
+
+## Decision
+
+Automatically maintain the `updated_at` column using BEFORE UPDATE triggers.
+
+## Reason
+
+Automatic audit timestamp maintenance guarantees consistency regardless of the application performing the update and ensures every modification is accurately tracked.
+
+## Alternatives Considered
+
+* Update timestamps in application code
+* Manual updates within SQL statements
+* Scheduled timestamp synchronization
+
+## Status
+
+Approved
+
+---
+
+# DEC-031
+
+## Date
+
+Day 5
+
+## Decision
+
+Prepare a master schema deployment script (`run_schema.sql`) for future automated database deployments.
+
+## Reason
+
+Although database development currently uses pgAdmin with manual execution, maintaining a master deployment script prepares the project for future CI/CD pipelines, automated provisioning, and PostgreSQL `psql`-based deployments.
+
+## Alternatives Considered
+
+* Manual execution only
+* Single monolithic SQL file
+* Database backup restoration
+
+## Status
+
+Approved
+
+---
+
+# DEC-032
+
+## Date
+
+Day 5
+
+## Decision
+
+Adopt idempotent index creation using `CREATE INDEX IF NOT EXISTS`.
+
+## Reason
+
+Allowing index scripts to be executed multiple times without failure improves deployment reliability, simplifies development workflows, and supports automated deployment pipelines.
+
+## Alternatives Considered
+
+* Standard CREATE INDEX statements
+* Manual index existence checks before execution
+
+## Status
+
+Approved
+
