@@ -247,21 +247,131 @@ RetailNova is now ready for database engineering.
 
 ---
 
-# Upcoming Session
+# Day 5 — OLTP Database Engineering
 
-## Sprint 2
+**Date:** Day 5
 
-Database Engineering
+## Agenda
 
-Topics:
-
-* OLTP Database Design
-* Entity Normalization
-* ER Diagram
-* PostgreSQL Schema
-* Warehouse Mapping
-* ETL Planning
+* PostgreSQL OLTP schema implementation
+* Foreign key implementation
+* Performance indexing
+* Audit automation
+* Deployment preparation
 
 ---
 
+## Discussion
 
+### OLTP Schema Implementation
+
+Implemented the complete normalized PostgreSQL OLTP database based on the approved enterprise architecture.
+
+Completed business modules:
+
+* Customer Management
+* Product Management
+* Location Management
+* Inventory Management
+* Sales Management
+* Payment Management
+* Returns Management
+* Procurement Management
+
+Implemented a total of **15 normalized tables** following Third Normal Form (3NF).
+
+---
+
+### Database Constraints
+
+Reviewed and implemented database integrity rules.
+
+Implemented:
+
+* Primary Keys
+* Unique Constraints
+* Check Constraints
+* Foreign Key Constraints
+
+Verified referential integrity across all business entities.
+
+---
+
+### Performance Optimization
+
+Designed and implemented an indexing strategy for the OLTP database.
+
+Indexes were created on:
+
+* Foreign key columns
+* Frequently searched fields
+* Business status columns
+* Date columns used in reporting
+* Customer lookup fields
+* Product lookup fields
+
+The indexing strategy was designed to improve transactional query performance while avoiding unnecessary indexes.
+
+---
+
+### Audit Automation
+
+Implemented a reusable PostgreSQL trigger function to automatically maintain audit timestamps.
+
+Created:
+
+* `update_updated_at()` trigger function
+
+Applied triggers to all tables containing an `updated_at` column to automatically update the timestamp whenever a record is modified.
+
+---
+
+### Deployment Preparation
+
+Prepared a master deployment script (`run_schema.sql`) to define the correct execution order of the database components for future automated deployments using PostgreSQL's `psql` utility.
+
+---
+
+## Key Decisions
+
+* Maintain a fully normalized (3NF) OLTP schema.
+* Store foreign keys separately from table definitions.
+* Use PostgreSQL `ENUM` types for controlled business values.
+* Create performance indexes only on appropriate search, join, filter, and reporting columns.
+* Centralize audit timestamp management using a reusable trigger function.
+* Prepare a master deployment script for future automation while continuing manual execution in pgAdmin during development.
+
+---
+
+## Outcome
+
+The RetailNova OLTP database reached a production-ready state.
+
+Completed components:
+
+* PostgreSQL schema
+* 15 normalized tables
+* ENUM types
+* Primary, Unique, Check, and Foreign Key constraints
+* Performance indexes
+* Audit function
+* Automatic update triggers
+
+The project is now ready to begin enterprise seed data generation, which will serve as the foundation for ETL pipelines, the analytical data warehouse, SQL analytics, Power BI dashboards, and machine learning.
+
+# Upcoming Session
+
+## Sprint 3
+
+Enterprise Data Generation
+
+Topics:
+
+* Enterprise Seed Data Strategy
+* Customer Data Generation
+* Product Catalog Population
+* Inventory Initialization
+* Orders and Transactions
+* Payments and Returns
+* Data Quality Validation
+* Preparing the OLTP database for ETL, OLAP, SQL Analytics, Power BI, and Machine Learning
