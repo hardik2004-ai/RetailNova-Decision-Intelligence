@@ -359,19 +359,144 @@ Completed components:
 
 The project is now ready to begin enterprise seed data generation, which will serve as the foundation for ETL pipelines, the analytical data warehouse, SQL analytics, Power BI dashboards, and machine learning.
 
-# Upcoming Session
+Day 6 — Synthetic Data Engine Foundation
 
-## Sprint 3
+Date: Day 6
 
-Enterprise Data Generation
+Agenda
+Enterprise data generation strategy
+Synthetic Data Engine architecture
+Historical simulation planning
+Business rules
+Probability models
+Development environment
+Product catalog strategy
+Discussion
+Data Generation Strategy
+
+Reviewed multiple approaches for populating the OLTP database.
+
+Compared:
+
+Manual SQL INSERT statements
+SQL data generation
+Python-based synthetic data generation
+
+Approved a dedicated Python-based Synthetic Data Generation Engine.
+
+The engine will generate CSV datasets for bulk loading into PostgreSQL.
+
+Historical Simulation
+
+Determined that the synthetic data should simulate approximately three years of business operations.
+
+Simulation period:
+
+2023-01-01
+2025-12-31
+
+This enables future trend analysis, forecasting, KPI evaluation, and machine learning.
+
+Dataset Scale
+
+Defined realistic dataset sizes based on the RetailNova business profile.
+
+Planned scale:
+
+Products: ~5,000
+Customers: ~50,000
+Addresses: ~70,000
+Memberships: ~10,000
+Inventory Records: ~40,000
+Orders: ~500,000
+Order Items: ~1,500,000
+Payments: ~500,000
+Returns: ~60,000
+Purchase Orders: ~8,000
+Purchase Order Items: ~40,000
+
+The scale was selected to balance realism with practical execution on a personal development machine.
+
+Synthetic Data Engine
+
+Designed the modular architecture for the data generation engine.
+
+Core components include:
+
+Configuration
+Constants
+Business Rules
+Probability Models
+Utility Functions
+Dataset Generators
+
+The engine will generate datasets in dependency order while maintaining referential integrity.
+
+Business Simulation
+
+Established the core simulation philosophy.
+
+RetailNova will generate realistic enterprise data using:
+
+Business Rules
+Probability Models
+Controlled Randomness
+
+Random values alone are not acceptable.
+
+Every generated record must represent plausible retail business behaviour.
+
+Development Environment
+
+Selected Google Colab as the primary development environment for rapid implementation.
+
+The notebook will be organised into logical sections representing the planned Python modules.
+
+After development, the notebook will be modularised into standalone Python files for the GitHub repository.
+
+Product Catalog Strategy
+
+Approved the use of a Product Catalog as master data.
+
+Instead of hardcoding products within Python, the Product Generator will consume a structured product_catalog.csv.
+
+This catalog will contain curated base products that will later be expanded into approximately 5,000 realistic SKUs through variants such as storage, colour, size, capacity, and pack size.
+
+Key Decisions
+Replace SQL INSERT scripts with a Python-based Synthetic Data Generation Engine.
+Generate CSV datasets for PostgreSQL bulk loading.
+Simulate three years of historical business operations.
+Adopt realistic enterprise dataset sizes.
+Separate business rules from probability models.
+Use Google Colab for rapid development.
+Treat the Product Catalog as master data rather than embedding products in code.
+Outcome
+
+Completed the foundation of the RetailNova Synthetic Data Generation Engine.
+
+Completed components:
+
+Configuration
+Constants
+Business Rules
+Probability Models
+Shared Utility Functions
+
+The project is now ready to build the Product Catalog and implement the Product Generator, marking the beginning of operational data generation.
+
+Upcoming Session
+Sprint 4 — Product Master & Synthetic Data Generation
 
 Topics:
 
-* Enterprise Seed Data Strategy
-* Customer Data Generation
-* Product Catalog Population
-* Inventory Initialization
-* Orders and Transactions
-* Payments and Returns
-* Data Quality Validation
-* Preparing the OLTP database for ETL, OLAP, SQL Analytics, Power BI, and Machine Learning
+Product Catalog creation
+Product Generator implementation
+Customer Generator
+Inventory Generator
+Procurement Generator
+Order Generator
+Payment Generator
+Return Generator
+Dataset validation
+CSV export
+PostgreSQL bulk loading preparation
