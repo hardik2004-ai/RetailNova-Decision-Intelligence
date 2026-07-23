@@ -1,0 +1,16 @@
+category_id,category_name,description,is_active,created_at,updated_at
+1,Electronics,"Consumer electronics, audio devices, cameras, wearables and electronic accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+2,Fashion,"Apparel, footwear, fashion accessories and lifestyle products for all customer segments.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+3,Home & Kitchen,"Kitchenware, cookware, home utilities, decor and household essentials.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+4,Beauty & Personal Care,"Skincare, haircare, grooming, cosmetics and personal-hygiene products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+5,Sports & Fitness,"Sports equipment, exercise accessories, fitness products and outdoor essentials.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+6,Books,"Fiction, non-fiction, academic, professional and children's books.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+7,Furniture,"Residential and office furniture, storage units and home-furnishing products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+8,Toys & Games,"Educational toys, board games, puzzles and recreational products for children and families.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+9,Grocery,"Packaged foods, beverages, staples and everyday household grocery essentials.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+10,Smart Home,"Connected home devices, automation products, security systems and smart appliances.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+11,Mobiles & Accessories,"Smartphones, feature phones, chargers, cases, screen protectors and mobile accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+12,Computers & Laptops,"Laptops, desktops, computer components, storage devices and computing accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+13,Appliances,"Major and small home appliances for cooking, cleaning, cooling and daily household use.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+14,Automotive,"Vehicle accessories, maintenance products, tools and automotive care essentials.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+15,Office Supplies,"Stationery, office equipment, organizational supplies and workplace consumables.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
