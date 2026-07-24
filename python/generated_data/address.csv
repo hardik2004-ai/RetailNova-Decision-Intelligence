@@ -1,0 +1,141 @@
+address_id,customer_id,address_line_1,address_line_2,city,state,postal_code,country,is_default,created_at,updated_at
+1,1,"H.No. 427, Char Path",Apartment 126,Bhopal,Madhya Pradesh,462001,India,True,2024-04-21 00:00:00+00:00,2024-04-21 00:00:00+00:00
+2,2,"97, Bahl",,Lucknow,Uttar Pradesh,226001,India,True,2024-11-20 00:00:00+00:00,2024-11-20 00:00:00+00:00
+3,3,"69/59, Saraf Circle",,Bhopal,Madhya Pradesh,462001,India,True,2025-01-10 00:00:00+00:00,2025-01-10 00:00:00+00:00
+4,3,"20, Dash Zila",Near Sector 43 Market,Pune,Maharashtra,411001,India,False,2025-01-10 00:00:00+00:00,2025-01-10 00:00:00+00:00
+5,4,"21, Vala Street",Block F,Ahmedabad,Gujarat,380001,India,True,2024-06-30 00:00:00+00:00,2024-06-30 00:00:00+00:00
+6,4,"26, Toor",,Coimbatore,Tamil Nadu,641001,India,False,2024-06-30 00:00:00+00:00,2024-06-30 00:00:00+00:00
+7,5,"H.No. 92, Bhatt Marg",Block B,Noida,Uttar Pradesh,201301,India,True,2023-03-07 00:00:00+00:00,2023-03-07 00:00:00+00:00
+8,5,"H.No. 902, Gandhi Nagar",Apartment 850,New Delhi,Delhi,110001,India,False,2023-03-07 00:00:00+00:00,2023-03-07 00:00:00+00:00
+9,6,"H.No. 41, Chauhan Circle",,Nagpur,Maharashtra,440001,India,True,2025-05-27 00:00:00+00:00,2025-05-27 00:00:00+00:00
+10,7,"01/97, Narayanan Path",Floor 7,Mysuru,Karnataka,570001,India,True,2025-08-16 00:00:00+00:00,2025-08-16 00:00:00+00:00
+11,8,"72/21, Bedi Path",Opposite Community Park 4,Mumbai,Maharashtra,400001,India,True,2024-06-23 00:00:00+00:00,2024-06-23 00:00:00+00:00
+12,8,"45/29, Comar Zila",Apartment 935,Jaipur,Rajasthan,302001,India,False,2024-06-23 00:00:00+00:00,2024-06-23 00:00:00+00:00
+13,9,"H.No. 75, Barman Marg",,Thane,Maharashtra,400601,India,True,2023-01-02 00:00:00+00:00,2023-01-02 00:00:00+00:00
+14,10,"69, Parmar Zila",Near Sector 77 Market,Hyderabad,Telangana,500001,India,True,2025-12-26 00:00:00+00:00,2025-12-26 00:00:00+00:00
+15,11,"129, Chopra Road",Floor 3,Chennai,Tamil Nadu,600001,India,True,2025-02-03 00:00:00+00:00,2025-02-03 00:00:00+00:00
+16,12,"86/790, Agate Street",Floor 13,Mysuru,Karnataka,570001,India,True,2024-11-07 00:00:00+00:00,2024-11-07 00:00:00+00:00
+17,13,"H.No. 120, Dani Path",,Pune,Maharashtra,411001,India,True,2025-06-01 00:00:00+00:00,2025-06-01 00:00:00+00:00
+18,13,"87/475, Chahal Marg",Block B,Pune,Maharashtra,411001,India,False,2025-06-01 00:00:00+00:00,2025-06-01 00:00:00+00:00
+19,14,"01/363, Raval",Floor 3,Vadodara,Gujarat,390001,India,True,2025-05-14 00:00:00+00:00,2025-05-14 00:00:00+00:00
+20,14,"H.No. 99, Narang Marg",,Nashik,Maharashtra,422001,India,False,2025-05-14 00:00:00+00:00,2025-05-14 00:00:00+00:00
+21,15,"50, Yogi Street",Apartment 871,New Delhi,Delhi,110001,India,True,2023-12-07 00:00:00+00:00,2023-12-07 00:00:00+00:00
+22,16,"303, Kapadia Road",Floor 3,Chennai,Tamil Nadu,600001,India,True,2025-09-23 00:00:00+00:00,2025-09-23 00:00:00+00:00
+23,16,"H.No. 33, Ramachandran Marg",Near Sector 83 Market,Vadodara,Gujarat,390001,India,False,2025-09-23 00:00:00+00:00,2025-09-23 00:00:00+00:00
+24,17,"078, Char Nagar",Block D,Chennai,Tamil Nadu,600001,India,True,2023-06-14 00:00:00+00:00,2023-06-14 00:00:00+00:00
+25,17,"H.No. 089, Thakur Circle",,Bhopal,Madhya Pradesh,462001,India,False,2023-06-14 00:00:00+00:00,2023-06-14 00:00:00+00:00
+26,18,"19/54, De Ganj",,Mysuru,Karnataka,570001,India,True,2024-06-18 00:00:00+00:00,2024-06-18 00:00:00+00:00
+27,19,"62, Ahuja Ganj",Opposite Community Park 17,Kolkata,West Bengal,700001,India,True,2023-05-31 00:00:00+00:00,2023-05-31 00:00:00+00:00
+28,19,"H.No. 319, Sagar",Apartment 316,Thane,Maharashtra,400601,India,False,2023-05-31 00:00:00+00:00,2023-05-31 00:00:00+00:00
+29,20,"661, Grover Nagar",Near Sector 33 Market,Vadodara,Gujarat,390001,India,True,2023-01-17 00:00:00+00:00,2023-01-17 00:00:00+00:00
+30,20,"15, Lal Path",Near Sector 57 Market,Kolkata,West Bengal,700001,India,False,2023-01-17 00:00:00+00:00,2023-01-17 00:00:00+00:00
+31,21,"28/92, Iyengar Ganj",Near Sector 47 Market,Nagpur,Maharashtra,440001,India,True,2025-11-01 00:00:00+00:00,2025-11-01 00:00:00+00:00
+32,21,"014, Mahajan Chowk",Block H,Kolkata,West Bengal,700001,India,False,2025-11-01 00:00:00+00:00,2025-11-01 00:00:00+00:00
+33,22,"17/525, Anne Ganj",Floor 9,New Delhi,Delhi,110001,India,True,2025-05-25 00:00:00+00:00,2025-05-25 00:00:00+00:00
+34,23,"37/249, Mistry Chowk",Near Sector 34 Market,Nagpur,Maharashtra,440001,India,True,2025-01-02 00:00:00+00:00,2025-01-02 00:00:00+00:00
+35,23,"77/487, Sangha Circle",Floor 14,Lucknow,Uttar Pradesh,226001,India,False,2025-01-02 00:00:00+00:00,2025-01-02 00:00:00+00:00
+36,24,"68/913, Dube",,Nashik,Maharashtra,422001,India,True,2025-04-24 00:00:00+00:00,2025-04-24 00:00:00+00:00
+37,24,"01/13, Hora Ganj",,Mysuru,Karnataka,570001,India,False,2025-04-24 00:00:00+00:00,2025-04-24 00:00:00+00:00
+38,25,"80/42, Shere Chowk",Opposite Community Park 13,Bengaluru,Karnataka,560001,India,True,2025-07-31 00:00:00+00:00,2025-07-31 00:00:00+00:00
+39,25,"41, Shanker Path",,Kolkata,West Bengal,700001,India,False,2025-07-31 00:00:00+00:00,2025-07-31 00:00:00+00:00
+40,26,"47, Contractor Street",,Indore,Madhya Pradesh,452001,India,True,2024-11-09 00:00:00+00:00,2024-11-09 00:00:00+00:00
+41,27,"H.No. 55, Chaudhuri Path",Floor 8,Nashik,Maharashtra,422001,India,True,2024-01-25 00:00:00+00:00,2024-01-25 00:00:00+00:00
+42,28,"75, Kade Road",,Kolkata,West Bengal,700001,India,True,2025-04-16 00:00:00+00:00,2025-04-16 00:00:00+00:00
+43,29,"725, Saraf Road",Block F,Indore,Madhya Pradesh,452001,India,True,2024-03-06 00:00:00+00:00,2024-03-06 00:00:00+00:00
+44,30,"948, Golla Nagar",,Chennai,Tamil Nadu,600001,India,True,2024-11-17 00:00:00+00:00,2024-11-17 00:00:00+00:00
+45,31,"H.No. 22, Dey Ganj",,Thane,Maharashtra,400601,India,True,2024-02-03 00:00:00+00:00,2024-02-03 00:00:00+00:00
+46,32,"983, Tata Road",Near Sector 16 Market,Chennai,Tamil Nadu,600001,India,True,2023-09-06 00:00:00+00:00,2023-09-06 00:00:00+00:00
+47,33,"82, Cherian Road",Floor 4,Pune,Maharashtra,411001,India,True,2025-08-30 00:00:00+00:00,2025-08-30 00:00:00+00:00
+48,34,"85/216, Thaker Road",Apartment 814,Vadodara,Gujarat,390001,India,True,2023-10-11 00:00:00+00:00,2023-10-11 00:00:00+00:00
+49,35,"H.No. 12, Vasa",,Thane,Maharashtra,400601,India,True,2025-02-18 00:00:00+00:00,2025-02-18 00:00:00+00:00
+50,35,"06, Sarna",,Lucknow,Uttar Pradesh,226001,India,False,2025-02-18 00:00:00+00:00,2025-02-18 00:00:00+00:00
+51,36,"78/781, Sur Nagar",Near Sector 22 Market,Vadodara,Gujarat,390001,India,True,2023-03-01 00:00:00+00:00,2023-03-01 00:00:00+00:00
+52,37,"14, Jha Zila",Opposite Community Park 12,Bhopal,Madhya Pradesh,462001,India,True,2025-05-27 00:00:00+00:00,2025-05-27 00:00:00+00:00
+53,37,"18, Srinivas Marg",Near Sector 67 Market,Surat,Gujarat,395001,India,False,2025-05-27 00:00:00+00:00,2025-05-27 00:00:00+00:00
+54,38,"250, Lanka Zila",,Pune,Maharashtra,411001,India,True,2023-02-09 00:00:00+00:00,2023-02-09 00:00:00+00:00
+55,39,"H.No. 01, Nagy Circle",,Ahmedabad,Gujarat,380001,India,True,2023-08-23 00:00:00+00:00,2023-08-23 00:00:00+00:00
+56,40,"053, Das Path",Block B,Nashik,Maharashtra,422001,India,True,2024-09-30 00:00:00+00:00,2024-09-30 00:00:00+00:00
+57,41,"70, Chacko Nagar",,Lucknow,Uttar Pradesh,226001,India,True,2023-03-26 00:00:00+00:00,2023-03-26 00:00:00+00:00
+58,42,"139, Konda Ganj",Near Sector 47 Market,Hyderabad,Telangana,500001,India,True,2025-06-10 00:00:00+00:00,2025-06-10 00:00:00+00:00
+59,43,"H.No. 601, Modi Zila",Near Sector 84 Market,Thane,Maharashtra,400601,India,True,2024-07-25 00:00:00+00:00,2024-07-25 00:00:00+00:00
+60,44,"H.No. 198, Lad Ganj",,Pune,Maharashtra,411001,India,True,2023-01-21 00:00:00+00:00,2023-01-21 00:00:00+00:00
+61,45,"H.No. 69, Ganguly Street",,Surat,Gujarat,395001,India,True,2024-09-19 00:00:00+00:00,2024-09-19 00:00:00+00:00
+62,46,"57/966, Sharaf Path",,Nashik,Maharashtra,422001,India,True,2024-01-15 00:00:00+00:00,2024-01-15 00:00:00+00:00
+63,47,"H.No. 93, Sarkar Chowk",,New Delhi,Delhi,110001,India,True,2024-08-21 00:00:00+00:00,2024-08-21 00:00:00+00:00
+64,48,"70/827, Gokhale Nagar",Opposite Community Park 14,Mumbai,Maharashtra,400001,India,True,2025-03-31 00:00:00+00:00,2025-03-31 00:00:00+00:00
+65,48,"H.No. 171, Cheema Chowk",Near Sector 8 Market,Mumbai,Maharashtra,400001,India,False,2025-03-31 00:00:00+00:00,2025-03-31 00:00:00+00:00
+66,49,"H.No. 048, Ramesh Circle",Block A,Bengaluru,Karnataka,560001,India,True,2025-12-06 00:00:00+00:00,2025-12-06 00:00:00+00:00
+67,49,"703, Pau Path",Block E,Pune,Maharashtra,411001,India,False,2025-12-06 00:00:00+00:00,2025-12-06 00:00:00+00:00
+68,50,"H.No. 612, Virk Nagar",,Pune,Maharashtra,411001,India,True,2023-12-22 00:00:00+00:00,2023-12-22 00:00:00+00:00
+69,50,"11/60, Jain Zila",,Surat,Gujarat,395001,India,False,2023-12-22 00:00:00+00:00,2023-12-22 00:00:00+00:00
+70,51,"18/868, Parikh Nagar",Block E,New Delhi,Delhi,110001,India,True,2024-02-10 00:00:00+00:00,2024-02-10 00:00:00+00:00
+71,51,"95/546, Bajaj Circle",,Lucknow,Uttar Pradesh,226001,India,False,2024-02-10 00:00:00+00:00,2024-02-10 00:00:00+00:00
+72,52,"10, Anne",Block C,Nashik,Maharashtra,422001,India,True,2024-09-14 00:00:00+00:00,2024-09-14 00:00:00+00:00
+73,53,"H.No. 064, Yohannan Road",,Bengaluru,Karnataka,560001,India,True,2023-02-12 00:00:00+00:00,2023-02-12 00:00:00+00:00
+74,54,"H.No. 05, Mohanty Chowk",Opposite Community Park 20,New Delhi,Delhi,110001,India,True,2024-11-13 00:00:00+00:00,2024-11-13 00:00:00+00:00
+75,55,"H.No. 164, Munshi Road",,Lucknow,Uttar Pradesh,226001,India,True,2025-04-07 00:00:00+00:00,2025-04-07 00:00:00+00:00
+76,56,"H.No. 503, Dasgupta Circle",,Indore,Madhya Pradesh,452001,India,True,2025-06-16 00:00:00+00:00,2025-06-16 00:00:00+00:00
+77,56,"55, Sen",,Bengaluru,Karnataka,560001,India,False,2025-06-16 00:00:00+00:00,2025-06-16 00:00:00+00:00
+78,57,"H.No. 17, Thakur Path",,Hyderabad,Telangana,500001,India,True,2023-11-12 00:00:00+00:00,2023-11-12 00:00:00+00:00
+79,58,"176, Srinivas Marg",Opposite Community Park 12,Pune,Maharashtra,411001,India,True,2023-05-23 00:00:00+00:00,2023-05-23 00:00:00+00:00
+80,59,"394, Talwar Road",Block G,Chennai,Tamil Nadu,600001,India,True,2025-09-18 00:00:00+00:00,2025-09-18 00:00:00+00:00
+81,59,"61/554, Trivedi Zila",,Vadodara,Gujarat,390001,India,False,2025-09-18 00:00:00+00:00,2025-09-18 00:00:00+00:00
+82,60,"78/74, Rau Marg",,Mysuru,Karnataka,570001,India,True,2025-02-19 00:00:00+00:00,2025-02-19 00:00:00+00:00
+83,60,"H.No. 002, Gupta Road",,Mumbai,Maharashtra,400001,India,False,2025-02-19 00:00:00+00:00,2025-02-19 00:00:00+00:00
+84,61,"59/528, Vala",,Lucknow,Uttar Pradesh,226001,India,True,2023-10-23 00:00:00+00:00,2023-10-23 00:00:00+00:00
+85,62,"69, Madan Nagar",Block B,Pune,Maharashtra,411001,India,True,2024-10-10 00:00:00+00:00,2024-10-10 00:00:00+00:00
+86,63,"38/549, Thaker Nagar",,Nagpur,Maharashtra,440001,India,True,2023-07-25 00:00:00+00:00,2023-07-25 00:00:00+00:00
+87,64,"042, Sethi Zila",,Mumbai,Maharashtra,400001,India,True,2023-06-11 00:00:00+00:00,2023-06-11 00:00:00+00:00
+88,64,"54/230, Lata Zila",Floor 10,Thane,Maharashtra,400601,India,False,2023-06-11 00:00:00+00:00,2023-06-11 00:00:00+00:00
+89,65,"H.No. 29, Thaker Chowk",Apartment 1115,Thane,Maharashtra,400601,India,True,2023-11-20 00:00:00+00:00,2023-11-20 00:00:00+00:00
+90,65,"H.No. 216, Deshmukh Road",,Coimbatore,Tamil Nadu,641001,India,False,2023-11-20 00:00:00+00:00,2023-11-20 00:00:00+00:00
+91,66,"51/59, Parsa Chowk",,Coimbatore,Tamil Nadu,641001,India,True,2024-08-28 00:00:00+00:00,2024-08-28 00:00:00+00:00
+92,66,"H.No. 791, Dube Zila",,Jaipur,Rajasthan,302001,India,False,2024-08-28 00:00:00+00:00,2024-08-28 00:00:00+00:00
+93,67,"764, Magar Path",Apartment 995,Nashik,Maharashtra,422001,India,True,2024-04-16 00:00:00+00:00,2024-04-16 00:00:00+00:00
+94,68,"H.No. 627, Pall",Apartment 937,Hyderabad,Telangana,500001,India,True,2025-06-21 00:00:00+00:00,2025-06-21 00:00:00+00:00
+95,69,"H.No. 90, Konda Street",,Nagpur,Maharashtra,440001,India,True,2023-12-03 00:00:00+00:00,2023-12-03 00:00:00+00:00
+96,70,"518, Arya Chowk",,Ahmedabad,Gujarat,380001,India,True,2025-01-19 00:00:00+00:00,2025-01-19 00:00:00+00:00
+97,71,"54, Dyal Circle",Near Sector 82 Market,Chennai,Tamil Nadu,600001,India,True,2024-11-02 00:00:00+00:00,2024-11-02 00:00:00+00:00
+98,71,"368, Venkatesh",,Chennai,Tamil Nadu,600001,India,False,2024-11-02 00:00:00+00:00,2024-11-02 00:00:00+00:00
+99,72,"53, Nagar Ganj",Floor 7,Lucknow,Uttar Pradesh,226001,India,True,2023-10-05 00:00:00+00:00,2023-10-05 00:00:00+00:00
+100,73,"714, Comar Path",Block F,Chennai,Tamil Nadu,600001,India,True,2024-03-20 00:00:00+00:00,2024-03-20 00:00:00+00:00
+101,74,"51, Baria Marg",Apartment 63,Nashik,Maharashtra,422001,India,True,2025-07-20 00:00:00+00:00,2025-07-20 00:00:00+00:00
+102,74,"H.No. 453, Anne Road",,Hyderabad,Telangana,500001,India,False,2025-07-20 00:00:00+00:00,2025-07-20 00:00:00+00:00
+103,75,"90, Nadig",,Pune,Maharashtra,411001,India,True,2024-04-22 00:00:00+00:00,2024-04-22 00:00:00+00:00
+104,76,"H.No. 076, Khanna Zila",,Chennai,Tamil Nadu,600001,India,True,2024-05-02 00:00:00+00:00,2024-05-02 00:00:00+00:00
+105,77,"20/965, Vora Zila",Apartment 818,Pune,Maharashtra,411001,India,True,2023-03-30 00:00:00+00:00,2023-03-30 00:00:00+00:00
+106,77,"140, Char Chowk",Apartment 714,Bhopal,Madhya Pradesh,462001,India,False,2023-03-30 00:00:00+00:00,2023-03-30 00:00:00+00:00
+107,78,"579, Pandit Marg",Opposite Community Park 14,Kolkata,West Bengal,700001,India,True,2023-05-15 00:00:00+00:00,2023-05-15 00:00:00+00:00
+108,78,"51/643, Sahota Path",,Coimbatore,Tamil Nadu,641001,India,False,2023-05-15 00:00:00+00:00,2023-05-15 00:00:00+00:00
+109,79,"91, Batta",Near Sector 79 Market,Thane,Maharashtra,400601,India,True,2024-03-16 00:00:00+00:00,2024-03-16 00:00:00+00:00
+110,80,"164, Sani Ganj",,Bhopal,Madhya Pradesh,462001,India,True,2023-07-06 00:00:00+00:00,2023-07-06 00:00:00+00:00
+111,80,"29, Chahal Circle",,Noida,Uttar Pradesh,201301,India,False,2023-07-06 00:00:00+00:00,2023-07-06 00:00:00+00:00
+112,81,"H.No. 20, Khurana Chowk",Opposite Community Park 6,Surat,Gujarat,395001,India,True,2023-04-16 00:00:00+00:00,2023-04-16 00:00:00+00:00
+113,82,"08/565, Srinivas Street",,Lucknow,Uttar Pradesh,226001,India,True,2023-02-23 00:00:00+00:00,2023-02-23 00:00:00+00:00
+114,83,"27, Bhagat Circle",,Coimbatore,Tamil Nadu,641001,India,True,2023-03-04 00:00:00+00:00,2023-03-04 00:00:00+00:00
+115,84,"H.No. 706, Mandal Nagar",Near Sector 71 Market,Ahmedabad,Gujarat,380001,India,True,2023-04-12 00:00:00+00:00,2023-04-12 00:00:00+00:00
+116,85,"74/25, Kumer Ganj",Apartment 853,Chennai,Tamil Nadu,600001,India,True,2024-09-23 00:00:00+00:00,2024-09-23 00:00:00+00:00
+117,85,"89, Patel",,Kolkata,West Bengal,700001,India,False,2024-09-23 00:00:00+00:00,2024-09-23 00:00:00+00:00
+118,86,"89/615, Parmer Road",Block H,Pune,Maharashtra,411001,India,True,2025-12-26 00:00:00+00:00,2025-12-26 00:00:00+00:00
+119,86,"25/877, Atwal Circle",Near Sector 68 Market,Vadodara,Gujarat,390001,India,False,2025-12-26 00:00:00+00:00,2025-12-26 00:00:00+00:00
+120,87,"20/86, Bakshi Nagar",Block F,Nashik,Maharashtra,422001,India,True,2025-05-05 00:00:00+00:00,2025-05-05 00:00:00+00:00
+121,88,"41/28, Puri Nagar",,Indore,Madhya Pradesh,452001,India,True,2023-06-11 00:00:00+00:00,2023-06-11 00:00:00+00:00
+122,89,"678, Dora Street",,Kolkata,West Bengal,700001,India,True,2023-10-30 00:00:00+00:00,2023-10-30 00:00:00+00:00
+123,89,"78/31, Kohli Street",,Mumbai,Maharashtra,400001,India,False,2023-10-30 00:00:00+00:00,2023-10-30 00:00:00+00:00
+124,90,"41/12, Lalla Road",,Ahmedabad,Gujarat,380001,India,True,2024-10-23 00:00:00+00:00,2024-10-23 00:00:00+00:00
+125,90,"74/807, Bali Path",Opposite Community Park 6,Indore,Madhya Pradesh,452001,India,False,2024-10-23 00:00:00+00:00,2024-10-23 00:00:00+00:00
+126,91,"H.No. 11, Misra Nagar",Floor 7,Pune,Maharashtra,411001,India,True,2023-06-07 00:00:00+00:00,2023-06-07 00:00:00+00:00
+127,92,"19/349, Mallick Nagar",Block C,Noida,Uttar Pradesh,201301,India,True,2023-05-07 00:00:00+00:00,2023-05-07 00:00:00+00:00
+128,92,"63/013, Shah Path",,Thane,Maharashtra,400601,India,False,2023-05-07 00:00:00+00:00,2023-05-07 00:00:00+00:00
+129,93,"845, Mammen Nagar",,Ahmedabad,Gujarat,380001,India,True,2024-08-02 00:00:00+00:00,2024-08-02 00:00:00+00:00
+130,94,"H.No. 703, Kala Path",Apartment 1001,Mysuru,Karnataka,570001,India,True,2023-11-04 00:00:00+00:00,2023-11-04 00:00:00+00:00
+131,94,"H.No. 66, Sagar",Opposite Community Park 3,Coimbatore,Tamil Nadu,641001,India,False,2023-11-04 00:00:00+00:00,2023-11-04 00:00:00+00:00
+132,95,"H.No. 474, Dalal Marg",Apartment 34,Vadodara,Gujarat,390001,India,True,2023-09-19 00:00:00+00:00,2023-09-19 00:00:00+00:00
+133,95,"91/076, Hayre Path",,Nashik,Maharashtra,422001,India,False,2023-09-19 00:00:00+00:00,2023-09-19 00:00:00+00:00
+134,96,"661, Dixit",,Chennai,Tamil Nadu,600001,India,True,2023-07-27 00:00:00+00:00,2023-07-27 00:00:00+00:00
+135,97,"99/563, Bakshi Street",,Noida,Uttar Pradesh,201301,India,True,2025-06-15 00:00:00+00:00,2025-06-15 00:00:00+00:00
+136,98,"116, Aurora Nagar",,Surat,Gujarat,395001,India,True,2024-02-02 00:00:00+00:00,2024-02-02 00:00:00+00:00
+137,98,"52, Mukhopadhyay Ganj",Opposite Community Park 11,Chennai,Tamil Nadu,600001,India,False,2024-02-02 00:00:00+00:00,2024-02-02 00:00:00+00:00
+138,99,"H.No. 600, Raghavan Road",Near Sector 5 Market,Surat,Gujarat,395001,India,True,2025-09-11 00:00:00+00:00,2025-09-11 00:00:00+00:00
+139,100,"H.No. 32, Keer Road",Floor 1,Bengaluru,Karnataka,560001,India,True,2024-12-16 00:00:00+00:00,2024-12-16 00:00:00+00:00
+140,100,"00, Singhal Road",Opposite Community Park 19,Surat,Gujarat,395001,India,False,2024-12-16 00:00:00+00:00,2024-12-16 00:00:00+00:00
