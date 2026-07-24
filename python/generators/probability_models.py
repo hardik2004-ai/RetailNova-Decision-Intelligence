@@ -720,3 +720,56 @@ if __name__ == "__main__":
         "October demand multiplier:",
         get_demand_multiplier(date(2025, 10, 20)),
     )
+
+probability_path = (
+    "/content/retailnova/python/generators/"
+    "probability_models.py"
+)
+
+replace_required(
+    probability_path,
+    '''ORDER_STATUS_WEIGHTS = {
+    "PLACED": 0.04,
+    "SHIPPED": 0.06,
+    "DELIVERED": 0.86,
+    "CANCELLED": 0.04,
+}''',
+    '''ORDER_STATUS_WEIGHTS = {
+    "PENDING": 0.04,
+    "CONFIRMED": 0.06,
+    "SHIPPED": 0.06,
+    "DELIVERED": 0.80,
+    "CANCELLED": 0.04,
+}''',
+)
+
+replace_required(
+    probability_path,
+    '''RETURN_STATUS_WEIGHTS = {
+    "REQUESTED": 0.12,
+    "APPROVED": 0.23,
+    "REJECTED": 0.10,
+    "REFUNDED": 0.55,
+}''',
+    '''RETURN_STATUS_WEIGHTS = {
+    "REQUESTED": 0.12,
+    "APPROVED": 0.23,
+    "REJECTED": 0.10,
+    "COMPLETED": 0.55,
+}''',
+)
+
+replace_required(
+    probability_path,
+    '''PURCHASE_ORDER_STATUS_WEIGHTS = {
+    "PENDING": 0.12,
+    "RECEIVED": 0.84,
+    "CANCELLED": 0.04,
+}''',
+    '''PURCHASE_ORDER_STATUS_WEIGHTS = {
+    "CREATED": 0.08,
+    "APPROVED": 0.08,
+    "RECEIVED": 0.80,
+    "CANCELLED": 0.04,
+}''',
+)
