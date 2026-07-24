@@ -1,0 +1,21 @@
+location_id,location_name,location_type,address,city,state,country,postal_code,phone_number,is_active,created_at,updated_at
+1,RetailNova Mumbai Andheri Store,STORE,"Marol Main Road, Andheri East",Mumbai,Maharashtra,India,400059,9867000001,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+2,RetailNova Pune Baner Store,STORE,Baner High Street,Pune,Maharashtra,India,411045,9867000002,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+3,RetailNova Thane Store,STORE,Ghodbunder Road,Thane,Maharashtra,India,400607,9867000003,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+4,RetailNova Nashik Store,STORE,College Road,Nashik,Maharashtra,India,422005,9867000004,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+5,RetailNova Nagpur Store,STORE,Wardha Road,Nagpur,Maharashtra,India,440015,9867000005,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+6,RetailNova Ahmedabad Store,STORE,SG Highway,Ahmedabad,Gujarat,India,380054,9867000006,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+7,RetailNova Surat Store,STORE,Dumas Road,Surat,Gujarat,India,395007,9867000007,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+8,RetailNova Bengaluru Store,STORE,Whitefield Main Road,Bengaluru,Karnataka,India,560066,9867000008,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+9,RetailNova Mysuru Store,STORE,Vijayanagar Main Road,Mysuru,Karnataka,India,570017,9867000009,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+10,RetailNova Chennai Store,STORE,Anna Nagar Second Avenue,Chennai,Tamil Nadu,India,600040,9867000010,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+11,RetailNova Coimbatore Store,STORE,Avinashi Road,Coimbatore,Tamil Nadu,India,641018,9867000011,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+12,RetailNova Hyderabad Store,STORE,Hitech City Road,Hyderabad,Telangana,India,500081,9867000012,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+13,RetailNova New Delhi Store,STORE,Connaught Place,New Delhi,Delhi,India,110001,9867000013,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+14,RetailNova Kolkata Store,STORE,Salt Lake Sector I,Kolkata,West Bengal,India,700064,9867000014,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+15,RetailNova Jaipur Store,STORE,Malviya Nagar,Jaipur,Rajasthan,India,302017,9867000015,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+16,RetailNova Mumbai Regional Warehouse,WAREHOUSE,Taloja Industrial Area,Mumbai,Maharashtra,India,410208,9867000016,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+17,RetailNova Ahmedabad Regional Warehouse,WAREHOUSE,Sanand Industrial Estate,Ahmedabad,Gujarat,India,382110,9867000017,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+18,RetailNova Bengaluru Regional Warehouse,WAREHOUSE,Nelamangala Logistics Park,Bengaluru,Karnataka,India,562123,9867000018,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+19,RetailNova Hyderabad Regional Warehouse,WAREHOUSE,Shamshabad Logistics Zone,Hyderabad,Telangana,India,501218,9867000019,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+20,RetailNova Noida Regional Warehouse,WAREHOUSE,Sector 80 Industrial Area,Noida,Uttar Pradesh,India,201305,9867000020,True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
