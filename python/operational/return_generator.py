@@ -742,3 +742,28 @@ file_path.write_text(
 )
 
 print("return_generator.py patched successfully.")
+
+return_path = (
+    "/content/retailnova/python/operational/"
+    "return_generator.py"
+)
+
+replace_required(
+    return_path,
+    '''    if payment_status == "REFUNDED":
+        return "REFUNDED"''',
+    '''    if payment_status == "REFUNDED":
+        return "COMPLETED"''',
+)
+
+replace_required(
+    return_path,
+    '''        if return_status in [
+            "APPROVED",
+            "REFUNDED",
+        ]:''',
+    '''        if return_status in [
+            "APPROVED",
+            "COMPLETED",
+        ]:''',
+)
