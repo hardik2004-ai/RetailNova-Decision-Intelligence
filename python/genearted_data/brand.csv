@@ -1,0 +1,38 @@
+brand_id,brand_name,description,is_active,created_at,updated_at
+1,Samsung,"Global consumer-electronics brand offering smartphones, televisions, appliances, wearables and smart-home devices.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+2,Apple,"Premium technology brand offering smartphones, computers, tablets, wearables and digital accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+3,Sony,"Consumer-electronics and entertainment brand offering televisions, audio equipment, cameras and gaming products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+4,LG,"Consumer-electronics and home-appliance brand offering televisions, refrigerators, washing machines and monitors.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+5,Xiaomi,"Technology brand offering smartphones, smart devices, wearables, televisions and connected-home products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+6,OnePlus,"Technology brand focused on smartphones, televisions, audio devices, tablets and mobile accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+7,Realme,"Consumer-technology brand offering smartphones, wearables, audio products and smart accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+8,Dell,"Computer-technology brand offering laptops, desktops, monitors, workstations and computing accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+9,HP,"Technology brand offering personal computers, printers, monitors and enterprise computing equipment.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+10,Lenovo,"Global technology brand offering laptops, desktops, tablets, workstations and computing accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+11,Asus,"Computer-hardware brand offering laptops, gaming systems, components, monitors and networking products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+12,Acer,"Technology brand offering laptops, desktops, monitors, projectors and computing accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+13,boAt,"Indian consumer-electronics brand offering headphones, speakers, smartwatches and mobile accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+14,Philips,"Consumer and personal-care brand offering appliances, grooming products, lighting and healthcare devices.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+15,Panasonic,"Consumer-electronics and appliance brand offering televisions, cameras, kitchen appliances and home equipment.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+16,Whirlpool,"Home-appliance brand offering refrigerators, washing machines, air conditioners and kitchen appliances.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+17,Bosch,"Engineering and appliance brand offering home appliances, power tools, automotive products and equipment.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+18,Puma,"Sports and lifestyle brand offering footwear, apparel, sportswear and fashion accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+19,Adidas,"Global sportswear brand offering footwear, apparel, fitness products and sports accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+20,Nike,"Global athletic brand offering sports footwear, apparel, training equipment and lifestyle accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+21,Levi's,"Fashion brand known for denim apparel, casual clothing and lifestyle accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+22,Allen Solly,"Indian fashion brand offering formal, casual and contemporary apparel for men and women.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+23,Lakmé,"Indian beauty brand offering cosmetics, skincare and personal-care products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+24,Mamaearth,"Indian personal-care brand offering skincare, haircare, beauty and wellness products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+25,L'Oréal Paris,"Global beauty brand offering skincare, cosmetics, haircare and personal-grooming products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+26,Himalaya,"Personal-care and wellness brand offering herbal skincare, haircare, healthcare and baby-care products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+27,Prestige,"Indian kitchen-appliance brand offering cookware, pressure cookers and small household appliances.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+28,Pigeon,"Kitchen and home-appliance brand offering cookware, mixers, cooktops and household utility products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+29,Milton,"Indian household-products brand offering drinkware, food-storage containers and kitchen utilities.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+30,Godrej Interio,"Indian furniture brand offering home, office and institutional furniture and storage solutions.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+31,Nilkamal,"Indian furniture brand offering home furniture, office furniture, storage and material-handling products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+32,Decathlon,"Sports retailer and product brand offering equipment, apparel and accessories across multiple sporting categories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+33,Yonex,"Sports-equipment brand specializing in badminton, tennis and related athletic accessories.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+34,Funskool,"Indian toy brand offering educational toys, games, puzzles and recreational products for children.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+35,Penguin Random House,"Publishing brand offering fiction, non-fiction, educational and children's books.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+36,Nestlé,"Global food and beverage brand offering packaged foods, nutrition products, beverages and confectionery.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
+37,Tata Consumer Products,"Indian consumer-products brand offering tea, coffee, packaged foods, beverages and everyday grocery products.",True,2023-01-01 00:00:00+00:00,2023-01-01 00:00:00+00:00
