@@ -520,3 +520,26 @@ if __name__ == "__main__":
         )
     )
     print(f"CSV: {csv_path}")
+
+payment_path = (
+    "/content/retailnova/python/operational/"
+    "payment_generator.py"
+)
+
+replace_required(
+    payment_path,
+    '''        "PLACED": {
+            "SUCCESS": 0.80,
+            "PENDING": 0.15,
+            "FAILED": 0.05,
+        },''',
+    '''        "PENDING": {
+            "SUCCESS": 0.20,
+            "PENDING": 0.75,
+            "FAILED": 0.05,
+        },
+        "CONFIRMED": {
+            "SUCCESS": 0.90,
+            "PENDING": 0.10,
+        },''',
+)
