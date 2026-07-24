@@ -682,3 +682,63 @@ if __name__ == "__main__":
     print("Return generation completed.")
     print(dataframe_summary(return_df, "return"))
     print(f"CSV: {csv_path}")
+from pathlib import Path
+
+file_path = Path(
+    "/content/retailnova/python/operational/"
+    "return_generator.py"
+)
+
+source_code = file_path.read_text(
+    encoding="utf-8"
+)
+
+old_code = """
+        maximum_return_datetime = min(
+            order_datetime + timedelta(days=15),
+            pd.Timestamp(
+                config.simulation_end_date
+            )
+            + timedelta(
+                hours=23,
+                minutes=59,
+            ),
+        )
+"""
+
+new_code = """
+        simulation_end_datetime = (
+            pd.Timestamp(
+                config.simulation_end_date
+            )
+            .tz_localize("UTC")
+            + timedelta(
+                hours=23,
+                minutes=59,
+                seconds=59,
+            )
+        )
+
+        maximum_return_datetime = min(
+            order_datetime + timedelta(days=15),
+            simulation_end_datetime,
+        )
+"""
+
+if old_code not in source_code:
+    raise RuntimeError(
+        "Expected code block was not found. "
+        "The file may already have been modified."
+    )
+
+updated_code = source_code.replace(
+    old_code,
+    new_code,
+)
+
+file_path.write_text(
+    updated_code,
+    encoding="utf-8",
+)
+
+print("return_generator.py patched successfully.")
