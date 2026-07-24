@@ -453,3 +453,55 @@ if __name__ == "__main__":
     print(f"Sales channels: {len(SALES_CHANNELS)}")
     print(f"Payment methods: {len(PAYMENT_METHODS)}")
     print(f"Required CSV files: {len(CSV_FILE_NAMES)}")
+
+constants_path = (
+    "/content/retailnova/python/generators/constants.py"
+)
+
+replace_required(
+    constants_path,
+    '''ORDER_STATUSES: Final[Tuple[str, ...]] = (
+    "PLACED",
+    "SHIPPED",
+    "DELIVERED",
+    "CANCELLED",
+)''',
+    '''ORDER_STATUSES: Final[Tuple[str, ...]] = (
+    "PENDING",
+    "CONFIRMED",
+    "SHIPPED",
+    "DELIVERED",
+    "CANCELLED",
+)''',
+)
+
+replace_required(
+    constants_path,
+    '''RETURN_STATUSES: Final[Tuple[str, ...]] = (
+    "REQUESTED",
+    "APPROVED",
+    "REJECTED",
+    "REFUNDED",
+)''',
+    '''RETURN_STATUSES: Final[Tuple[str, ...]] = (
+    "REQUESTED",
+    "APPROVED",
+    "REJECTED",
+    "COMPLETED",
+)''',
+)
+
+replace_required(
+    constants_path,
+    '''PURCHASE_ORDER_STATUSES: Final[Tuple[str, ...]] = (
+    "PENDING",
+    "RECEIVED",
+    "CANCELLED",
+)''',
+    '''PURCHASE_ORDER_STATUSES: Final[Tuple[str, ...]] = (
+    "CREATED",
+    "APPROVED",
+    "RECEIVED",
+    "CANCELLED",
+)''',
+)
