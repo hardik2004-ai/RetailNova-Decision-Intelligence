@@ -1,4 +1,4 @@
-%%writefile /content/retailnova/python/master/brand_generator.py
+
 
 """
 RetailNova Decision Intelligence Platform
